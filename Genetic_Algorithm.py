@@ -342,7 +342,7 @@ def plot_fitness_landscape(name):
 
 def printf(string, opt=False, text=""):
     #Print to file
-    file_name = "Metaheuristics_TP6_active_datafile" + datetime.datetime.now().strftime("%H")
+    file_name = "GA_active_datafile" + datetime.datetime.now().strftime("%H")
     if opt:
         file_name += "_key_figs" + text
     result_f = open(file_name, "a")
@@ -350,9 +350,9 @@ def printf(string, opt=False, text=""):
     result_f.close()
 
 if __name__ == '__main__':
-    print("------ TP6, Genetic Algorithms ------")
+    print("------ Genetic Algorithms ------")
     val_av_korning = False
-    val = input("Press '1' to plot all figures (takes 15 minutes): ")
+    val = input("Press '1' to plot all figures (takes approx. 15 minutes): ")
     if val == "1":
         val_av_korning = True
     
